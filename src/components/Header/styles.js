@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
 
 `
 export const HeaderContainer = styled.header`
-  width: 100%;
+  	width: 100%;
 	padding: 30px 30px;
 
 	display: flex;
