@@ -32,6 +32,19 @@ export const HeaderContainer = styled.header`
 			list-style: none;
 			display: flex;
 
+			li {
+				a {
+					outline: none;
+					text-decoration: none;
+					color: #1C211D;
+					transition: 0.2s;
+
+					&:hover {
+						color: #F0D02D;
+					}
+				}
+			}
+
 			li + li {
 				margin-left: 50px;
 			}
@@ -52,7 +65,6 @@ export const Logo = styled.div`
 	}
 
 	span {
-		font-style: italic;
 		color: #497A83;
 		font-size: 20px;
 	}

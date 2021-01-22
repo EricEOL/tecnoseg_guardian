@@ -14,8 +14,8 @@ function Header() {
 
             <div>
                 <ul>
-                    <li>Produtos</li>
-                    <li>Contato</li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </div>
         </HeaderContainer>
