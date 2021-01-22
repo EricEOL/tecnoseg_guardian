@@ -5,7 +5,6 @@ const CardContainer = styled.div`
     width: 200px;
     height: 300px;
 
-    border-radius: 8px;
     background-color: #fff;
 
     transition: 0.2s;
@@ -13,6 +12,11 @@ const CardContainer = styled.div`
     &:hover {
         transform: scale(1.1);
     }
+
+    @media (max-width: 768px) {
+        margin-bottom: 16px;
+        border-bottom: 2px solid #1C211D;
+	}
     
     img {
         width: 100%;
