@@ -1,5 +1,12 @@
+import Header from '../src/infra/components/Header';
+//import GlobalStyle from '../src/GlobalStyle';
+
 function Home() {
-    return <div>Home</div>
+    return (
+    <>
+        <Header />
+    </>
+    )
 }
 
 export default Home;
