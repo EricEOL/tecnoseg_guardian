@@ -28,7 +28,7 @@ export const ImageContainer = styled.div`
 		flex-direction: column;
 	}
 
-	background-color: #fff;
+	background-color: #FBF6EF;
 
 	padding: 15px;
 `
@@ -54,7 +54,7 @@ export const Contact = styled.div`
 		margin-bottom: 80px;
 
 		@media (max-width: 768px) {
-			font-size: 16px;
+			font-size: 14px;
 		}
 
 		thead tr th {

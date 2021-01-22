@@ -5,7 +5,7 @@ const CardContainer = styled.div`
     width: 200px;
     height: 300px;
 
-    background-color: #fff;
+    background-color: transparent;
 
     transition: 0.2s;
 
@@ -26,7 +26,7 @@ const CardContainer = styled.div`
 
     span {
         color: #1C211D;
-        background-color: #fff;
+        background-color: transparent;
     }
 
 `;
