@@ -5,7 +5,7 @@ const CardContainer = styled.div`
     width: 200px;
     height: 300px;
 
-    background-color: transparent;
+    background-color: #fff;
 
     transition: 0.2s;
 

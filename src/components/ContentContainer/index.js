@@ -40,7 +40,7 @@ function Content() {
                     </div>
                     <div>
                         <strong>Email</strong>
-                        <p>carlosabiliolopes@gmail.com</p>
+                        <p className="email">carlosabiliolopes@gmail.com</p>
                     </div>
                 </div>
             </Contact>

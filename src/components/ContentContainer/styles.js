@@ -110,6 +110,10 @@ export const Contact = styled.div`
 				margin-top: 8px;
 			}
 
+			.email {
+				font-size: 9px;
+			}
+
 		}
 	}
 
