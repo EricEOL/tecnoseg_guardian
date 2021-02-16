@@ -2,20 +2,19 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 	
-	* {
-      margin: 0;
-      padding: 0;
-			border: 0;
+* {
+    margin: 0;
+    padding: 0;
+	border: 0;
 
-			font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 
-			background-color: #FBF6EF;
+	background-color: #FBF6EF;
 			
-			box-sizing: border-box;
+	box-sizing: border-box;
 	
-			font-family: 'Montserrat', sans-serif;
-		}
-
+	font-family: 'Montserrat', sans-serif;
+}
 `
 export const HeaderContainer = styled.header`
   	width: 100%;
@@ -37,10 +36,15 @@ export const HeaderContainer = styled.header`
 					outline: none;
 					text-decoration: none;
 					color: #1C211D;
+					padding: 5px;
+
 					transition: 0.2s;
 
+					border-bottom: 2px solid transparent;
+
 					&:hover {
-						color: #F0D02D;
+						background-image: linear-gradient(to left, #497A83 50%, #2C494E);
+						color: #fff;
 					}
 				}
 			}
@@ -50,7 +54,7 @@ export const HeaderContainer = styled.header`
 			}
 		}
 	}
-` 
+`
 
 export const Logo = styled.div`
 	display: flex;

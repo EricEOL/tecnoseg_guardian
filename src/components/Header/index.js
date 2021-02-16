@@ -15,7 +15,7 @@ function Header() {
             <div>
                 <ul>
                     <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
         </HeaderContainer>

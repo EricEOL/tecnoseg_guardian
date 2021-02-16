@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const ContentContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 	margin-top: 40px;
 
@@ -14,12 +17,27 @@ export const ContentContainer = styled.div`
 
 		text-shadow: 2px 2px 4px #BDC7BF;
 
-		margin-bottom: 30px;
+	}
+
+	h3 {
+		font-size: 25px;
+		font-weight: normal;
+
+		background: linear-gradient(to left, #497A83 50%, #2C494E);
+		color: #fff;
+
+		margin-top: 40px;
+		margin-bottom: 20px;
+		padding: 5px;
+
+		border-radius: 8px;
 	}
 `
 
 export const ImageContainer = styled.div`
 	display: flex;
+	width: 95%;
+	padding: 15px;
 
 	justify-content: space-evenly;
 	align-items: center;
@@ -28,44 +46,71 @@ export const ImageContainer = styled.div`
 		flex-direction: column;
 	}
 
-	background-color: #FBF6EF;
-
-	padding: 15px;
+	background-color: #fff;
+	box-shadow: 0 0 20px #999;
+	border-radius: 8px;
 `
 
 export const Contact = styled.div`
 	display: flex;
-	flex-direction: column;
-
-	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
+	border-radius: 8px;
 
-	margin-top: 40px;
+	width: 80%;
+	height: 400px;
 
-	h3 {
-		font-size: 30px;
-		font-weight: normal;
+	margin-bottom: 40px;
 
-		margin-bottom: 20px;
+	background: #fff;
+	box-shadow: 0 0 20px #999;
+
+	@media (max-width: 768px) {
+		width: 95%;
+
+		font-size: 12px;
 	}
 
-	table {
-		font-size: 20px;
-		margin-bottom: 80px;
+	.contactImage {
+		border-radius: 8px 0 0 8px;
+	}
 
-		@media (max-width: 768px) {
-			font-size: 14px;
-		}
+	> div {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: flex-start;
 
-		thead tr th {
-			background: #2C494E;
-			color: #fff;
-			padding: 10px;
-		}
+		border-radius: 8px;
 
-		tbody tr td {
-			padding: 10px;
+		background: #fff;
+
+		width: 50%;
+		height: 400px;
+
+		div {
+			text-align: left;
+			margin: 30px;
+
 			background: #fff;
+			strong, p {
+				background: #fff;
+			}
+
+			strong {
+				background: #497A83;
+				color: #fff;
+				padding: 4px;
+				border-radius: 4px;
+				font-size: 16px;
+			}
+
+			p {
+				margin-top: 8px;
+			}
+
 		}
 	}
+
 `

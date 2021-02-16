@@ -1,11 +1,13 @@
 import {ContentContainer, ImageContainer, Contact} from './styles';
 import Card from '../Card';
+import Image from 'next/image';
 
 function Content() {
     return (
         <ContentContainer id="produtos">
             <h2>Sua melhor escolha para equipamentos anti-furto com qualidade e inovação</h2>
 
+            <h3>Nossos Produtos</h3>
             <ImageContainer>
                 <Card image="/Antena_AM_58k.png" title="Antena AM 58k" />
                 <Card image="/Antena_RF_Henry.png" title="Antena RF Henry" />
@@ -16,23 +18,31 @@ function Content() {
                 <Card image="/Tag_Garrafa.png" title="Tag Garrafa" />
             </ImageContainer>
 
-            <Contact>
-                <h3>Fale Conosco</h3>
+            <h3>Fale Conosco</h3>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Telefone</th>
-                            <th>Email</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>(21)999688350</td>
-                            <td>carlosabiliolopes@gmail.com</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <Contact id="contato">
+                <div style={{ position: 'relative' }}>
+                    <Image 
+                        className="contactImage"
+                        src="/contact.jpg" 
+                        layout="fill" 
+                        objectFit="cover"
+                    />
+                </div>
+                <div>
+                    <div>
+                        <strong>Responsável</strong>
+                        <p>Carlos Abílio</p>
+                    </div>
+                    <div>
+                        <strong>Telefone</strong>
+                        <p>(21)99968-8350</p>
+                    </div>
+                    <div>
+                        <strong>Email</strong>
+                        <p>carlosabiliolopes@gmail.com</p>
+                    </div>
+                </div>
             </Contact>
 
         </ContentContainer>
